@@ -1,0 +1,28 @@
+/* Первая картинка - правый верхний угол страницы */
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Вторая картинка - внизу страницы */
+.bottom-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0; /* или right: 0, если нужно справа */
+    width: 100%; /* замените на реальный размер */
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Подборка — Hairitage</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/pages/results.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="account.html">Аккаунт</a>
+      <a href="results.html" class="active">Подборка</a>
+    </nav>
+
+    <div class="brand">
+      <span>Hairitage</span>
+      <img src="assets/icons/logo.svg" alt="Hairitage">
+    </div>
+  </header>
+
+  <main class="results">
+
+    <h1 class="results-title">Ваша персональная подборка</h1>
+
+    <div id="categoriesContainer"></div>
+
+  </main>
+
+  <script src="js/data/products.js"></script>
+  <script src="js/results.js"></script>
+</body>
+
+</html>

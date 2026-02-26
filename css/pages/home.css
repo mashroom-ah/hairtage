@@ -1,0 +1,91 @@
+body {
+    background-color: var(--bg-white);
+}
+
+.card {
+    background: url('../../assets/images/diamond-gradient.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius);
+    border: 1px solid var(--green-dark);
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 6rem;
+    align-items: stretch;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
+}
+
+.hero-left p {
+    font-size: 3rem;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.hero-right {
+    align-self: center;
+}
+
+.hero-right h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-right ol {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    padding-left: 1.2rem;
+}
+
+.hero-right li {
+    margin-bottom: 0.5rem;
+}
+
+.title-line {
+    background: radial-gradient(circle at center, 
+        color-mix(in srgb, var(--green-light) 100%, transparent), 
+        color-mix(in srgb, var(--green-dark) 40%, transparent)
+    );
+    margin: 0 auto 2rem auto; /* центрирование и отступ снизу */
+    padding: 0.5rem;
+}
+
+.title-line p {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 80px;
+  padding-bottom: 6rem;
+}
+
+.advantage {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.advantage img {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+.advantage p {
+    font-size: 1.75rem;
+    line-height: 1.6;
+}

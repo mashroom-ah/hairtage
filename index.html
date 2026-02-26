@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hairtage</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/home.css">
+    <link rel="stylesheet" href="css/background-elements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <img src="assets/images/background-1.svg" alt="" class="hero-bg">
+
+    <img src="assets/images/background-2.svg" alt="" class="bottom-bg">
+
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="active">Главная</a>
+            <a href="account.html">Аккаунт</a>
+            <a href="results.html">Подборка</a>
+        </nav>
+
+        <div class="brand">
+            <span>Hairtage</span>
+            <img src="assets/icons/logo.svg" alt="Hairtage logo">
+        </div>
+    </header>
+
+    <main>
+        <!--HERO-->
+        <section class="hero container">
+            <div class="hero-left card">
+                <p>Найди свои<br>идеальные средства<br>для волос за 2 минуты
+                <p>
+                    <button class="button" onClick="goToSurvey()">Пройти опрос</button>
+            </div>
+
+            <div class="hero-right">
+                <h3>Как это работает:</h3>
+                <ol>
+                    <li>Ответь на вопросы</li>
+                    <li>Мы анализируем твои волосы</li>
+                    <li>Ты получаешь персональный набор средств</li>
+                </ol>
+            </div>
+        </section>
+
+        <!--ADANTAGES-->
+        <section class="advantages">
+            <div class="title-line">
+                <p>Преимущества</p>
+            </div>
+
+            <div class="advantages-grid container">
+                <div class="advantage">
+                    <img src="assets/icons/target.svg" alt="">
+                    <p>Никаких универсальных советов — только то, что подходит именно тебе</p>
+                </div>
+                <div class="advantage">
+                    <img src="assets/icons/shield.svg" alt="">
+                    <p>Учитываем окрашивание, кудри, повреждения и чувствительную кожу головы</p>
+                </div>
+                <div class="advantage">
+                    <img src="assets/icons/money.svg" alt="">
+                    <p>Помогаем перестать покупать лишние средства</p>
+                </div>
+                <div class="advantage">
+                    <img src="assets/icons/flask.svg" alt="">
+                    <p>Прозрачная логика подбора и состава средств</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function goToSurvey() {
+            window.location.href = 'survey.html';
+        }
+    </script>
+</body>
+
+</html>

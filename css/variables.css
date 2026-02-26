@@ -1,0 +1,13 @@
+:root {
+    --bg-white: #f5f5f5;
+    --green-light: #E8F0E0;
+    --green-dark: #A2D66D;
+    --green-btn-light: #A1D969;
+    --green-btn-dark: #A0CA76;
+    --text: #2E2E2E;
+    --text-muted: #768A61;
+    --radius: 16px;
+    --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+    --font-main: "Literata", serif;
+}

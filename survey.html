@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Опрос — Hairitage</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages/survey.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="account.html">Аккаунт</a>
+            <a href="results.html">Подборка</a>
+        </nav>
+
+        <div class="brand">
+            <span>Hairitage</span>
+            <img src="assets/icons/logo.svg" alt="">
+        </div>
+    </header>
+
+    <div class="decor-left">
+        <img src="assets/icons/comb.svg" alt="">
+    </div>
+
+    <div class="decor-right">
+        <img src="assets/icons/brush.svg" alt="">
+    </div>
+
+    <main class="survey-container">
+        <div class="survey-counter" id="counter"></div>
+
+        <div class="survey-card card" id="surveyCard"></div>
+
+        <div class="survey-controls">
+            <button id="prevBtn" class="nav-btn">
+                <img src="assets/icons/arrow-left.svg" alt="">
+            </button>
+
+            <button id="nextBtn" class="nav-btn">
+                <img src="assets/icons/arrow-right.svg" alt="">
+            </button>
+        </div>
+        <p class="warning" id="warning">Пожалуйста, выберите вариант ответа</p>
+
+    </main>
+
+    <script src="js/data/survey.js"></script>
+    <script src="js/survey.js"></script>
+</body>
+
+</html>

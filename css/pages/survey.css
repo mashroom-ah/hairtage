@@ -1,0 +1,150 @@
+body {
+    background-color: var(--green-light);
+    min-height: 100vh;
+}
+
+.survey-container {
+    position: relative;
+    max-width: 35%;
+    margin: 0 auto 4rem auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+
+.survey-counter {
+    font-size: 1.75rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    padding-right: 1rem;
+    text-align: right;
+}
+
+
+.survey-card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--green-dark);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 40px 32px 50px 32px;
+    position: relative;
+}
+
+.survey-card h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-bottom: 32px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option:last-child {
+    margin-bottom: 0;
+}
+
+.option input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: var(--text);
+    cursor: pointer;
+    flex-shrink: 0;
+    /*защита от сжатия */
+    margin: 0;
+}
+
+
+.survey-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    /* Чтобы кликать сквозь контейнер */
+    max-width: 700px;
+    /* Чуть шире карточки */
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+}
+
+.nav-btn {
+    background: radial-gradient(circle at center, var(--green-btn-light), var(--green-btn-dark));
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+.nav-btn img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Сдвигаем кнопки наружу */
+#prevBtn {
+    margin-left: -100px;
+    /* Выдвигаем влево */
+}
+
+#nextBtn {
+    margin-right: -100px;
+    /* Выдвигаем вправо */
+}
+
+.warning {
+    margin-top: 16px;
+    font-size: 1rem;
+    color: #c0392b;
+    display: none;
+    text-align: center;
+}
+
+.decor-left {
+    position: absolute;
+    left: 2.5rem;
+    top: calc(1rem + 80px);
+    /* высота header + отступ */
+    width: clamp(80px, 16vw, 350px);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.decor-left img {
+    width: 110%;
+    height: auto;
+}
+
+.decor-right {
+    position: absolute;
+    right: 2.75rem;
+    bottom: 0;
+    width: clamp(90px, 16vw, 450px);
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.decor-right img {
+    width: 105%;
+    height: auto;
+}
