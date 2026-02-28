@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Аккаунт — Hairitage</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/pages/account.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="nav">
+    <a href="index.html">Главная</a>
+    <a href="account.html" class="active">Аккаунт</a>
+    <a href="results.html">Подборка</a>
+  </nav>
+
+  <div class="brand">
+    <span>Hairitage</span>
+    <img src="images/logo.svg" alt="">
+  </div>
+</header>
+
+<main class="account">
+
+  <!-- Левая карточка -->
+  <section class="profile-card">
+    <h2 id="userName"></h2>
+    <p id="userEmail"></p>
+
+    <button class="btn-primary">Изменить</button>
+  </section>
+
+  <!-- Правая часть -->
+  <section class="survey-section">
+
+    <button class="arrow left" id="prevBtn">
+      <img src="assets/icons/left.svg" alt="">
+    </button>
+
+    <div class="survey-card" id="surveyCard"></div>
+
+    <button class="arrow right" id="nextBtn">
+      <img src="assets/icons/right.svg" alt="">
+    </button>
+
+  </section>
+
+</main>
+
+<script src="js/account.js"></script>
+</body>
+</html>

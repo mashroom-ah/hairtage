@@ -1,0 +1,114 @@
+body {
+    background-color: var(--green-light);
+    min-height: 100vh;
+}
+
+.decor-left {
+    position: absolute;
+    left: 2.5rem;
+    top: calc(1rem + 80px);
+    /* высота header + отступ */
+    width: clamp(80px, 16vw, 350px);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.decor-left img {
+    width: 110%;
+    height: auto;
+}
+
+.decor-right {
+    position: absolute;
+    right: 2.75rem;
+    bottom: 0;
+    width: clamp(90px, 16vw, 450px);
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.decor-right img {
+    width: 105%;
+    height: auto;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-card {
+    width: 40vw;
+}
+
+.reg-banner {
+    background: url('../../assets/images/log-bg.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--radius);
+    border: 1px solid var(--text-muted);
+    box-shadow: var(--shadow);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 35px;
+    padding: 40px 40px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 15px 50px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.form-group label {
+    font-size: 20px;
+}
+
+.form-group input {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--text-muted);
+    text-align: center;
+}
+
+.btn-primary {
+    background: radial-gradient(circle at center, var(--green-btn-light), var(--green-btn-dark));
+    border: none;
+    border-radius: var(--radius);
+    padding: 0.75rem 2rem;
+    font-size: 26px;
+    cursor: pointer;
+    font-family: var(--text);
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+    margin-top: 8px;
+}
+
+.btn-primary:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.register-footer {
+    text-align: center;
+    font-size: 20px;
+}
+
+.register-footer a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text);
+}
