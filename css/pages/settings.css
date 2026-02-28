@@ -1,0 +1,85 @@
+body {
+    background-color: var(--green-light);
+    min-height: 100vh;
+}
+
+.decor-left {
+    position: absolute;
+    left: 2.5rem;
+    top: calc(1rem + 80px);
+    /* высота header + отступ */
+    width: clamp(80px, 16vw, 350px);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.decor-left img {
+    width: 110%;
+    height: auto;
+}
+
+.decor-right {
+    position: absolute;
+    right: 2.75rem;
+    bottom: 0;
+    width: clamp(90px, 16vw, 450px);
+    opacity: 0.7;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.decor-right img {
+    width: 105%;
+    height: auto;
+}
+
+.settings-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-form {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+input {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--text-muted);
+    text-align: center;
+}
+
+.hint {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 10px;
+    font-size: 22px;
+    background: radial-gradient(circle at center, var(--green-btn-light), var(--green-btn-dark));
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-family: var(--font-main);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}

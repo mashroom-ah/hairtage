@@ -1,0 +1,126 @@
+body {
+    background: url('../../assets/images/aqua-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.account {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+
+  max-width: 1300px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+/* ---------- Левая карточка ---------- */
+
+.profile-card {
+  background-color: var(--bg-white);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--text-muted);
+
+  height: fit-content;
+}
+
+.profile-card h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.profile-card p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.btn-primary {
+  padding: 14px 40px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  font-family: var(--text);
+
+  background: #cfebaa;
+}
+
+/* ---------- Правая часть ---------- */
+
+.survey-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.survey-card {
+  background-color: var(--bg-white);
+  width: 25vw;
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--text-muted);
+
+  text-align: center;
+}
+
+.survey-card h3 {
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.survey-card ul {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.survey-card li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.survey-card .btn-secondary {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius);
+  margin-top: 20px;
+  background: radial-gradient(circle at center, var(--green-btn-light), var(--green-btn-dark));
+  border: none;
+  cursor: pointer;
+  font-family: var(--text);
+  font-size: 20px;
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Стрелки ---------- */
+
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: -5px;
+}
+
+.arrow.right {
+  right: -5px;
+}

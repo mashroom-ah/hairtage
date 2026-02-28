@@ -45,7 +45,33 @@ nextBtn.addEventListener("click", () => {
   localStorage.setItem("surveyAnswers", JSON.stringify(answers));
 
   if (currentIndex === surveyQuestions.length - 1) {
-    window.location.href = "survey-success.html";
+    // сегодняшняя дата
+    const today = new Date().toLocaleDateString("ru-RU");
+
+    // фейковые данные (имитация backend)
+    const newSurvey = {
+      date: today,
+      summary: [
+        "Жирная кожа головы",
+        "Сухие кончики",
+        "Окрашенные"
+      ]
+    };
+
+    // получаем существующие опросы или пустой массив
+    const surveys = JSON.parse(localStorage.getItem("surveys")) || [];
+
+    // добавляем новый
+    surveys.push(newSurvey);
+
+    // сохраняем обратно
+    localStorage.setItem("surveys", JSON.stringify(surveys));
+
+    // очищаем временные ответы
+    localStorage.removeItem("surveyAnswers");
+
+    // переход на страницу результатов
+    window.location.href = "results.html";
   } else {
     currentIndex++;
     renderQuestion();
