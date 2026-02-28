@@ -26,6 +26,12 @@ form.addEventListener("submit", function (e) {
     // Имитируем регистрацию
     console.log("Регистрация:", { name, email, password });
 
-    // Переход на страницу подборки
-    window.location.href = "results.html";
+    const surveys = JSON.parse(localStorage.getItem("surveys")) || [];
+
+    if (!Array.isArray(surveys) || surveys.length === 0) {
+        window.location.href = "account.html";
+    }
+    else {
+        window.location.href = "results.html";
+    }
 });

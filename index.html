@@ -26,9 +26,9 @@
 
     <header class="header">
         <nav class="nav">
-            <a href="index.html" class="active">Главная</a>
-            <a href="account.html">Аккаунт</a>
-            <a href="results.html">Подборка</a>
+            <button class="nav-link active" onclick="goToHome()">Главная</button>
+            <button class="nav-link" onclick="goToAccount()">Аккаунт</button>
+            <button class="nav-link" onclick="goToResults()">Подборка</button>
         </nav>
 
         <div class="brand">
@@ -82,11 +82,7 @@
             </div>
         </section>
     </main>
-    <script>
-        function goToSurvey() {
-            window.location.href = 'survey.html';
-        }
-    </script>
+    <script src="js/nav-logic.js"></script>
 </body>
 
 </html>

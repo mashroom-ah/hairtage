@@ -27,6 +27,9 @@ function renderSurvey() {
     card.innerHTML = `
       <h3>${today}</h3>
       <p>Данных о прохождении опроса нет</p>
+      <button class="btn-secondary" onclick="location.href='survey.html'">
+      Пройти опрос
+    </button>
     `;
     prevBtn.style.display = "none";
     nextBtn.style.display = "none";

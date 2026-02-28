@@ -17,14 +17,20 @@ form.addEventListener("submit", function (e) {
   }
 
   localStorage.setItem('user', JSON.stringify({
-        name: "banana-mama",
-        email: email,
-        password: password
-    }));
+    name: "banana-mama",
+    email: email,
+    password: password
+  }));
 
   // Имитируем вход
   console.log("Вход:", { email, password });
 
-  // Переход на страницу подборки
-  window.location.href = "results.html";
+  const surveys = JSON.parse(localStorage.getItem("surveys")) || [];
+
+  if (!Array.isArray(surveys) || surveys.length === 0) {
+    window.location.href = "account.html";
+  }
+  else {
+    window.location.href = "results.html";
+  }
 });

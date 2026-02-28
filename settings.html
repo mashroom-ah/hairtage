@@ -20,9 +20,9 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="index.html">Главная</a>
-            <a href="account.html" class="active">Аккаунт</a>
-            <a href="results.html">Подборка</a>
+            <button class="nav-link" onclick="goToHome()">Главная</button>
+            <button class="nav-link active" onclick="goToAccount()">Аккаунт</button>
+            <button class="nav-link" onclick="goToResults()">Подборка</button>
         </nav>
 
         <div class="brand">
@@ -65,6 +65,7 @@
 
     </main>
 
+    <script src="js/nav-logic.js"></script>
     <script src="js/settings.js"></script>
 </body>
 

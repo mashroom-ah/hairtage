@@ -11,17 +11,23 @@
     font-size: 24px;
 }
 
-.nav a {
-    text-decoration: none;
-    color: var(--text);
+.nav button {
+    background: none;        /* Убираем серый фон кнопки */
+    border: none;            /* Убираем рамку */
+    padding: 0;              /* Убираем внутренние отступы кнопки */
+    font: var(--font-main);           /* Наследуем шрифт от родителя (размер, жирность) */
+    color: var(--text);      /* Цвет как у ссылок */
+    cursor: pointer;         /* Курсор-рука как у ссылки */
+    text-decoration: none;   /* Убираем подчеркивание, если бы оно было */
+    display: inline-block;   /* Для корректного отображения */
 }
 
-.nav a:hover {
-    color: var(--green-dark) /* жирный при наведении */
+.nav button:hover {
+    color: var(--green-dark); /* Тот же цвет при наведении */
 }
 
-.nav a.active {
-    font-weight: 700;
+.nav button.active {
+    font-weight: 700;        /* Жирный для активной кнопки */
 }
 
 .brand {
