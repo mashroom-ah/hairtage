@@ -1,0 +1,67 @@
+body {
+    background: url('../../assets/images/aqua-background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+}
+
+.success-card {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 48px;
+    width: 520px;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.success-card h3 {
+    font-size: 28px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.banner {
+    font-size: 26px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+
+/* ---------- Buttons ---------- */
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    background: radial-gradient(circle at center, var(--green-btn-light), var(--green-btn-dark));
+    border: none;
+    border-radius: var(--radius);
+    font-family: var(--text);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.note {
+    font-size: 14px;
+    margin-top: 20px;
+    opacity: 0.9;
+    text-align: left;
+}

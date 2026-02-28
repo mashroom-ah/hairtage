@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Опрос завершён</title>
+    <link rel="stylesheet" href="css/pages/survey-success.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html">Главная</a>
+            <a href="account.html" class="active">Аккаунт</a>
+            <a href="results.html">Подборка</a>
+        </nav>
+
+        <div class="brand">
+            <span>Hairtage</span>
+            <img src="assets/icons/logo.svg" alt="Hairtage logo">
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="success-card">
+            <h3>Опрос успешно пройден</h3>
+
+            <p class="banner">Хотите войти в аккаунт / пройти регистрацию,
+                чтобы сохранить результаты* или сразу перейти к ним?</p>
+
+            <button id="loginBtn" class="btn-primary">
+                Вход / Регистрация
+            </button>
+
+            <button id="resultsBtn" class="btn-primary">
+                Перейти к результатам
+            </button>
+
+            <p class="note">
+                *Все продукты носят лишь рекомендательный характер
+            </p>
+        </div>
+    </main>
+
+    <script src="js/survey-success.js"></script>
+</body>
+
+</html>

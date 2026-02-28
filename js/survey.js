@@ -57,6 +57,11 @@ nextBtn.addEventListener("click", () => {
         "Окрашенные"
       ]
     };
+    const user = JSON.parse(localStorage.getItem("user")) || {
+      name: "",
+      email: "",
+      password: ""
+    };
 
     // получаем существующие опросы или пустой массив
     const surveys = JSON.parse(localStorage.getItem("surveys")) || [];
@@ -70,8 +75,12 @@ nextBtn.addEventListener("click", () => {
     // очищаем временные ответы
     localStorage.removeItem("surveyAnswers");
 
-    // переход на страницу результатов
-    window.location.href = "results.html";
+    if (user.name !=="" && user.password !== "") {
+        window.location.href = "results.html";
+    } else {
+      window.location.href = "survey-success.html";
+    }
+
   } else {
     currentIndex++;
     renderQuestion();
