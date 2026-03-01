@@ -83,3 +83,110 @@ input {
     opacity: 1;
     transform: scale(1.02);
 }
+
+@media (max-width: 992px) {
+
+    .decor-left {
+        display: none;
+    }
+
+    .decor-right {
+        display: none;
+    }
+
+    .settings-form {
+        width: 450px;
+        gap: 24px;
+        margin-top: 8vh;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input {
+        margin-top: 8px;
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+
+    .hint {
+        font-size: 16px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 8px;
+        font-size: 20px;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 600px) {
+    .decor-left {
+        display: none;
+    }
+
+    .decor-right {
+        display: none;
+    }
+
+    .settings-page {
+        margin: 20px 16px;
+        min-height: calc(100vh - 100px);
+    }
+
+    .settings-form {
+        margin-top: 0px;
+        width: 100%;
+        max-width: 400px;
+        gap: 20px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input {
+        margin-top: 6px;
+        padding: 8px 10px;
+        font-size: 16px;
+    }
+
+    .hint {
+        font-size: 14px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 8px;
+        font-size: 18px;
+    }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 380px) {
+    .settings-form {
+        margin-top: 0px;
+        gap: 16px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        padding: 7px 8px;
+        font-size: 15px;
+    }
+
+    .hint {
+        font-size: 12px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 7px;
+        font-size: 16px;
+    }
+}

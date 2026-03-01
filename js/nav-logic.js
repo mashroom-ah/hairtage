@@ -1,6 +1,11 @@
 function goToHome() {
     window.location.href = "index.html";
 };
+
+function goToSurvey() {
+    window.location.href = "survey.html";
+};
+
 function goToAccount() {
     let user = null;
     try {
