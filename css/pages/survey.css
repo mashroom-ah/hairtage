@@ -208,55 +208,88 @@ body {
 
 @media (max-width: 480px) {
 
+    /* ===== КОНТЕЙНЕР ===== */
+
     .survey-container {
-        max-width: clamp(150px, 75%, 360px);
+        max-width: 90%;
+        margin: 1.5rem auto 2rem;
+        padding: 0;
     }
+
+    /* ===== СЧЁТЧИК ===== */
 
     .survey-counter {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         margin-bottom: 1rem;
+        text-align: right;
+        padding-right: 0;
+        margin-right: 10px;
     }
 
+    /* ===== КАРТОЧКА ===== */
+
     .survey-card {
-        padding: 22px 18px 30px;
+        padding: 26px 20px 32px;
+        margin-bottom: 20px;
     }
 
     .survey-card h2 {
-        font-size: 16px;
-        margin-bottom: 16px;
+        font-size: 18px;
+        margin-bottom: 20px;
+        line-height: 1.4;
     }
 
+    /* ===== ВАРИАНТЫ ===== */
+
     .option {
-        font-size: 14px;
-        gap: 8px;
+        font-size: 16px;
+        gap: 12px;
         margin-bottom: 1.25rem;
     }
 
     .option input[type="radio"] {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
+    }
+
+    /* ===== КНОПКИ ЛИСТАНИЯ ===== */
+
+    .survey-controls {
+        position: static;          /*  больше не absolute */
+        transform: none;
+        margin-top: 1.25rem;
+
+        display: flex;
+        gap: 12px;
+        justify-content: space-between;
+
+        max-width: 100%;
+        padding: 0;
+        pointer-events: auto;
     }
 
     .nav-btn {
-        padding: 0.4rem 0.75rem;
+        flex: 1;                   /* кнопки широкие */
+        padding: 0.75rem 0;
+        justify-content: center;
     }
 
     .nav-btn img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2rem;
+        height: 1.75rem;
     }
+
+    /* убираем любые сдвиги */
+    #prevBtn,
+    #nextBtn {
+        margin: 0;
+    }
+
+    /* ===== WARNING ===== */
 
     .warning {
         font-size: 13px;
-    }
-
-    #prevBtn {
-        margin-left: -52px;
-        /* Выдвигаем влево */
-    }
-
-    #nextBtn {
-        margin-right: -52px;
-        /* Выдвигаем вправо */
+        margin-top: 10px;
+        text-align: center;
     }
 }
