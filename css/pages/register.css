@@ -112,3 +112,139 @@ body {
     text-decoration: none;
     color: var(--text);
 }
+
+/* Планшеты */
+@media (max-width: 992px) {
+    .decor-left,
+    .decor-right {
+        display: none;
+    }
+
+    .register-card {
+        width: 60vw;
+    }
+
+    .reg-banner {
+        font-size: 30px;
+        padding: 30px 30px;
+    }
+
+    .register-form {
+        padding: 20px 40px;
+        gap: 15px;
+    }
+
+    .form-group label {
+        font-size: 18px;
+    }
+
+    .form-group input {
+        font-size: 18px;
+        padding: 8px 12px;
+    }
+
+    .form-group p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        font-size: 24px;
+        padding: 0.7rem 1.8rem;
+    }
+
+    .register-footer {
+        font-size: 18px;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 600px) {
+    .decor-left,
+    .decor-right {
+        display: none;
+    }
+
+    .register {
+        margin: 10px 16px;
+        min-height: calc(100vh - 100px);
+    }
+
+    .register-card {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .reg-banner {
+        font-size: 24px;
+        padding: 24px 20px;
+    }
+
+    .register-form {
+        padding: 16px 24px;
+        gap: 14px;
+    }
+
+    .form-group {
+        gap: 4px;
+    }
+
+    .form-group label {
+        font-size: 16px;
+    }
+
+    .form-group input {
+        font-size: 16px;
+        padding: 8px 10px;
+    }
+
+    .form-group p {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+
+    .btn-primary {
+        font-size: 20px;
+        padding: 0.6rem 1.5rem;
+        margin-top: 6px;
+    }
+
+    .register-footer {
+        font-size: 16px;
+    }
+}
+
+/* Маленькие телефоны */
+@media (max-width: 380px) {
+    .reg-banner {
+        font-size: 20px;
+        padding: 20px 16px;
+    }
+
+    .register-form {
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input {
+        font-size: 15px;
+        padding: 7px 8px;
+    }
+
+    .form-group p {
+        font-size: 11px;
+    }
+
+    .btn-primary {
+        font-size: 18px;
+        padding: 0.5rem 1.2rem;
+        margin-top: 4px;
+    }
+
+    .register-footer {
+        font-size: 14px;
+    }
+}
