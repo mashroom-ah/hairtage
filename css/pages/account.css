@@ -168,10 +168,13 @@ body {
 
   /* ===== КНОПКИ ===== */
 
-  .btn-primary,
   .survey-card .btn-secondary {
     font-size: 18px;
     padding: 12px;
+  }
+  .btn-primary {
+    font-size: 18px;
+    padding: 12px 25px;
   }
 
   .buttons {

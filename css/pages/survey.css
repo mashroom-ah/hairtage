@@ -9,6 +9,7 @@ body {
     margin: 0 auto 4rem auto;
     padding: 0 20px;
     text-align: left;
+    max-width: clamp(520px, 35%, 680px);
 }
 
 
@@ -146,4 +147,116 @@ body {
 .decor-right img {
     width: 105%;
     height: auto;
+}
+
+@media (max-width: 900px) {
+
+    .survey-container {
+        max-width: clamp(350px, 65%, 680px);
+    }
+
+    /* фоновые картинки убираем */
+    .decor-left,
+    .decor-right {
+        display: none;
+    }
+
+    .survey-card h2 {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    .option {
+        font-size: 18px;
+        gap: 14px;
+        margin-bottom: 1.5rem;
+    }
+
+    .option input[type="radio"] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .warning {
+        font-size: 14px;
+    }
+
+    #prevBtn {
+        margin-left: -80px;
+        /* Выдвигаем влево */
+    }
+
+    #nextBtn {
+        margin-right: -80px;
+        /* Выдвигаем вправо */
+    }
+
+    .nav-btn img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .survey-counter {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ================================================= */
+/* MOBILE ≤ 480px */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+    .survey-container {
+        max-width: clamp(150px, 75%, 360px);
+    }
+
+    .survey-counter {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .survey-card {
+        padding: 22px 18px 30px;
+    }
+
+    .survey-card h2 {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .option {
+        font-size: 14px;
+        gap: 8px;
+        margin-bottom: 1.25rem;
+    }
+
+    .option input[type="radio"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .nav-btn {
+        padding: 0.4rem 0.75rem;
+    }
+
+    .nav-btn img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .warning {
+        font-size: 13px;
+    }
+
+    #prevBtn {
+        margin-left: -52px;
+        /* Выдвигаем влево */
+    }
+
+    #nextBtn {
+        margin-right: -52px;
+        /* Выдвигаем вправо */
+    }
 }
