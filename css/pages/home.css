@@ -51,11 +51,11 @@ body {
 }
 
 .title-line {
-    background: radial-gradient(circle at center, 
-        color-mix(in srgb, var(--green-light) 100%, transparent), 
-        color-mix(in srgb, var(--green-dark) 40%, transparent)
-    );
-    margin: 0 auto 2rem auto; /* центрирование и отступ снизу */
+    background: radial-gradient(circle at center,
+            color-mix(in srgb, var(--green-light) 100%, transparent),
+            color-mix(in srgb, var(--green-dark) 40%, transparent));
+    margin: 0 auto 2rem auto;
+    /* центрирование и отступ снизу */
     padding: 0.5rem;
 }
 
@@ -65,19 +65,19 @@ body {
 }
 
 .advantages-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px 80px;
-  padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 80px;
+    padding-bottom: 6rem;
 }
 
 .advantage {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  font-size: 20px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .advantage img {
@@ -88,4 +88,124 @@ body {
 .advantage p {
     font-size: 1.75rem;
     line-height: 1.6;
+}
+
+/* ====== TABLET ====== */
+@media (max-width: 1024px) {
+
+    .hero {
+        gap: 3rem;
+    }
+
+    .hero-left p {
+        font-size: 2.5rem;
+    }
+
+    .hero-right h3 {
+        font-size: 1.75rem;
+    }
+
+    .hero-right ol {
+        font-size: 1.5rem;
+    }
+}
+
+/* ====== MOBILE ====== */
+@media (max-width: 900px) {
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Убираем фоновые картинки */
+    .hero-bg,
+    .bottom-bg {
+        display: none;
+    }
+
+    /* HERO в колонку */
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .hero-left p {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        font-size: 1.75rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+
+    .hero-right h3 {
+        font-size: 2rem;
+    }
+
+    .hero-right ol {
+        font-size: 1.75rem;
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    /* Преимущества в одну колонку */
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-bottom: 4rem;
+    }
+
+    .advantage {
+        gap: 15px;
+        margin: 10px 10px;
+    }
+
+    .advantage img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .advantage p {
+        font-size: 1.75rem;
+    }
+
+    .title-line p {
+        font-size: 2.5rem;
+    }
+}
+
+/* ====== SMALL MOBILE ====== */
+@media (max-width: 480px) {
+
+    .hero-left p {
+        font-size: 1.7rem;
+    }
+
+    .button {
+        font-size: 1.4rem;
+    }
+
+    .hero-right h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero-right ol {
+        font-size: 1.1rem;
+    }
+
+    .title-line p {
+        font-size: 1.6rem;
+    }
+
+    .advantage p {
+        font-size: 1.1rem;
+    }
 }

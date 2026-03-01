@@ -12,22 +12,32 @@
 }
 
 .nav button {
-    background: none;        /* Убираем серый фон кнопки */
-    border: none;            /* Убираем рамку */
-    padding: 0;              /* Убираем внутренние отступы кнопки */
-    font: var(--font-main);           /* Наследуем шрифт от родителя (размер, жирность) */
-    color: var(--text);      /* Цвет как у ссылок */
-    cursor: pointer;         /* Курсор-рука как у ссылки */
-    text-decoration: none;   /* Убираем подчеркивание, если бы оно было */
-    display: inline-block;   /* Для корректного отображения */
+    background: none;
+    /* Убираем серый фон кнопки */
+    border: none;
+    /* Убираем рамку */
+    padding: 0;
+    /* Убираем внутренние отступы кнопки */
+    font: var(--font-main);
+    /* Наследуем шрифт от родителя (размер, жирность) */
+    color: var(--text);
+    /* Цвет как у ссылок */
+    cursor: pointer;
+    /* Курсор-рука как у ссылки */
+    text-decoration: none;
+    /* Убираем подчеркивание, если бы оно было */
+    display: inline-block;
+    /* Для корректного отображения */
 }
 
 .nav button:hover {
-    color: var(--green-dark); /* Тот же цвет при наведении */
+    color: var(--green-dark);
+    /* Тот же цвет при наведении */
 }
 
 .nav button.active {
-    font-weight: 700;        /* Жирный для активной кнопки */
+    font-weight: 700;
+    /* Жирный для активной кнопки */
 }
 
 .brand {
@@ -40,4 +50,65 @@
 .brand img {
     width: 60px;
     height: auto;
+}
+
+/* БУРГЕР */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 28px;
+    height: 3px;
+    background-color: var(--text);
+    border-radius: 2px;
+}
+
+/* ====== MOBILE ====== */
+@media (max-width: 900px) {
+
+    .header {
+        padding: 16px 24px;
+    }
+
+    .burger {
+        display: flex;
+        order: -1;
+        /* слева */
+    }
+
+    .nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+        display: none;
+    }
+
+    .nav.open {
+        display: flex;
+        background-color: var(--bg-white);
+        border-bottom: 1px solid var(--text-muted);
+        z-index: 2;
+    }
+
+    .header.open {
+        background-color: var(--bg-white);
+    }
+
+    .nav button {
+        font-size: 20px;
+    }
+
+    .brand {
+        margin-left: auto;
+    }
 }
